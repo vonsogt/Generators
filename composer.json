@@ -1,5 +1,5 @@
 {
-    "name": "laravel-backpack/generators",
+    "name": "backpack/generators",
     "description": "Generate files for laravel projects",
     "keywords": [
         "generators",
