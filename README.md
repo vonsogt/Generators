@@ -9,6 +9,8 @@
 
 Quickly generate Backpack templated Models, Requests, Views and Config files
 
+**Subscribe to the [Mailchimp list](http://eepurl.com/bUEGjf) to be up to date with the community.** 
+
 ## Install
 
 Via Composer
