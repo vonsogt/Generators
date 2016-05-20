@@ -41,7 +41,9 @@ class ModelBackpackCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        if ($this->option('softdelete')) return __DIR__.'/../stubs/model-softdelete.stub';
+        if ($this->option('softdelete')) {
+            return __DIR__.'/../stubs/model-softdelete.stub';
+        }
 
         return __DIR__.'/../stubs/model.stub';
     }
@@ -49,7 +51,8 @@ class ModelBackpackCommand extends GeneratorCommand
     /**
      * Get the default namespace for the class.
      *
-     * @param  string  $rootNamespace
+     * @param string $rootNamespace
+     *
      * @return string
      */
     protected function getDefaultNamespace($rootNamespace)
@@ -60,8 +63,9 @@ class ModelBackpackCommand extends GeneratorCommand
     /**
      * Replace the table name for the given stub.
      *
-     * @param  string  $stub
-     * @param  string  $name
+     * @param string $stub
+     * @param string $name
+     *
      * @return string
      */
     protected function replaceTable(&$stub, $name)
@@ -73,10 +77,11 @@ class ModelBackpackCommand extends GeneratorCommand
         return $this;
     }
 
-     /**
+    /**
      * Build the class with the given name.
      *
-     * @param  string  $name
+     * @param string $name
+     *
      * @return string
      */
     protected function buildClass($name)

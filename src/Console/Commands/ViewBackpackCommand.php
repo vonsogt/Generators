@@ -41,12 +41,14 @@ class ViewBackpackCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        if ($this->option('plain')) return __DIR__.'/../stubs/view-plain.stub';
+        if ($this->option('plain')) {
+            return __DIR__.'/../stubs/view-plain.stub';
+        }
 
         return __DIR__.'/../stubs/view.stub';
     }
 
-     /**
+    /**
      * Execute the console command.
      *
      * @return bool|null
@@ -57,8 +59,7 @@ class ViewBackpackCommand extends GeneratorCommand
 
         $path = $this->getPath($name);
 
-        if ($this->alreadyExists($this->getNameInput()))
-        {
+        if ($this->alreadyExists($this->getNameInput())) {
             $this->error($this->type.' already exists!');
 
             return false;
@@ -74,7 +75,8 @@ class ViewBackpackCommand extends GeneratorCommand
     /**
      * Determine if the class already exists.
      *
-     * @param  string  $name
+     * @param string $name
+     *
      * @return bool
      */
     protected function alreadyExists($name)
@@ -85,7 +87,8 @@ class ViewBackpackCommand extends GeneratorCommand
     /**
      * Get the destination class path.
      *
-     * @param  string  $name
+     * @param string $name
+     *
      * @return string
      */
     protected function getPath($name)
@@ -96,7 +99,8 @@ class ViewBackpackCommand extends GeneratorCommand
     /**
      * Build the class with the given name.
      *
-     * @param  string  $name
+     * @param string $name
+     *
      * @return string
      */
     protected function buildClass($name)

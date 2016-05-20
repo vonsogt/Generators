@@ -44,7 +44,7 @@ class ConfigBackpackCommand extends GeneratorCommand
         return __DIR__.'/../stubs/config.stub';
     }
 
-     /**
+    /**
      * Execute the console command.
      *
      * @return bool|null
@@ -55,8 +55,7 @@ class ConfigBackpackCommand extends GeneratorCommand
 
         $path = $this->getPath($name);
 
-        if ($this->alreadyExists($this->getNameInput()))
-        {
+        if ($this->alreadyExists($this->getNameInput())) {
             $this->error($this->type.' already exists!');
 
             return false;
@@ -72,7 +71,8 @@ class ConfigBackpackCommand extends GeneratorCommand
     /**
      * Determine if the class already exists.
      *
-     * @param  string  $name
+     * @param string $name
+     *
      * @return bool
      */
     protected function alreadyExists($name)
@@ -83,7 +83,8 @@ class ConfigBackpackCommand extends GeneratorCommand
     /**
      * Get the destination class path.
      *
-     * @param  string  $name
+     * @param string $name
+     *
      * @return string
      */
     protected function getPath($name)
@@ -94,7 +95,8 @@ class ConfigBackpackCommand extends GeneratorCommand
     /**
      * Build the class with the given name.
      *
-     * @param  string  $name
+     * @param string $name
+     *
      * @return string
      */
     protected function buildClass($name)
