@@ -10,7 +10,7 @@
 
 Quickly generate Backpack templated Models, Requests, Views and Config files
 
-**Subscribe to the [Mailchimp list](http://eepurl.com/bUEGjf) to be up to date with the community.** 
+**[Subscribe to the newsletter](http://eepurl.com/bUEGjf) to be notified of major updates or breaking changes.** 
 
 ## Install
 
@@ -64,8 +64,8 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
 
-- [Cristian Tone][http://updivision.com]
-- [All Contributors][link-contributors]
+- [Cristian Tone](http://updivision.com)
+- [All Contributors](link-contributors)
 
 ## License
 
