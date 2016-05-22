@@ -2,10 +2,8 @@
 
 namespace Backpack\Generators\Console\Commands;
 
-use App\User;
-use App\DripEmailer;
-use Illuminate\Console\Command;
 use Artisan;
+use Illuminate\Console\Command;
 
 class CrudBackpackCommand extends Command
 {
@@ -34,14 +32,14 @@ class CrudBackpackCommand extends Command
 
         // Create the CRUD Controller and show output
         Artisan::call('backpack:crud-controller', ['name' => $name]);
-        echo(Artisan::output());
+        echo Artisan::output();
 
         // Create the CRUD Model and show output
         Artisan::call('backpack:crud-model', ['name' => $name]);
-        echo(Artisan::output());
+        echo Artisan::output();
 
         // Create the CRUD Request and show output
         Artisan::call('backpack:crud-request', ['name' => $name]);
-        echo(Artisan::output());
+        echo Artisan::output();
     }
 }
