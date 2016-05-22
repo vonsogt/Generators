@@ -78,6 +78,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ## Credits
 
 - [Cristian Tone](http://updivision.com)
+- [Cristian Tabacitu](http://tabacitu.ro)
 - [All Contributors](link-contributors)
 
 ## License
