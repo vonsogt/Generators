@@ -18,3 +18,9 @@ All Notable changes to `Backpack Generators` will be documented in this file
 
 ### Security
 - Nothing
+
+
+## 1.1.0 - 2016-05-22
+
+### Added
+- Generators for CRUD files: backpack:crud, backpack:crud-request, backpack:crud-model and backpack:crud-controller

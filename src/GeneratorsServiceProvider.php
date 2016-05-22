@@ -11,6 +11,11 @@ class GeneratorsServiceProvider extends ServiceProvider
         'Backpack\Generators\Console\Commands\RequestBackpackCommand',
         'Backpack\Generators\Console\Commands\ViewBackpackCommand',
         'Backpack\Generators\Console\Commands\ConfigBackpackCommand',
+        // Backpack\CRUD files:
+        'Backpack\Generators\Console\Commands\CrudModelBackpackCommand',
+        'Backpack\Generators\Console\Commands\CrudControllerBackpackCommand',
+        'Backpack\Generators\Console\Commands\CrudRequestBackpackCommand',
+        'Backpack\Generators\Console\Commands\CrudBackpackCommand',
     ];
 
     /**

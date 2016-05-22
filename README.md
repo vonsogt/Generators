@@ -8,7 +8,7 @@
 [![Style CI](https://styleci.io/repos/53490941/shield)](https://styleci.io/repos/53490941)
 [![Total Downloads](https://img.shields.io/packagist/dt/backpack/generators.svg?style=flat-square)](https://packagist.org/packages/backpack/generators)
 
-Quickly generate Backpack templated Models, Requests, Views and Config files
+Quickly generate Backpack templated Models, Requests, Views and Config files.
 
 **[Subscribe to the newsletter](http://eepurl.com/bUEGjf) to be notified of major updates or breaking changes.** 
 
@@ -52,6 +52,19 @@ $ php artisan backpack:view
 
 ``` bash
 $ php artisan backpack:config
+```
+
+- All files for a new Backpack\CRUD interface:
+
+``` bash
+$ php artisan backpack:crud {Entity_name}
+```
+
+- A new Backpack\CRUD file:
+``` bash
+$ php artisan backpack:crud-controller {Entity_name}
+$ php artisan backpack:crud-model {Entity_name}
+$ php artisan backpack:crud-request {Entity_name}
 ```
 
 ## Change log
