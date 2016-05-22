@@ -3,7 +3,6 @@
 namespace Backpack\Generators\Console\Commands;
 
 use Illuminate\Console\GeneratorCommand;
-use Illuminate\Support\Str;
 
 class CrudControllerBackpackCommand extends GeneratorCommand
 {
@@ -35,11 +34,11 @@ class CrudControllerBackpackCommand extends GeneratorCommand
      */
     protected $type = 'Controller';
 
-
     /**
      * Get the destination class path.
      *
-     * @param  string  $name
+     * @param string $name
+     *
      * @return string
      */
     protected function getPath($name)

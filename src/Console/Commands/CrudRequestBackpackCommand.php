@@ -34,11 +34,11 @@ class CrudRequestBackpackCommand extends GeneratorCommand
      */
     protected $type = 'Request';
 
-
     /**
      * Get the destination class path.
      *
-     * @param  string  $name
+     * @param string $name
+     *
      * @return string
      */
     protected function getPath($name)
@@ -47,7 +47,6 @@ class CrudRequestBackpackCommand extends GeneratorCommand
 
         return $this->laravel['path'].'/'.str_replace('\\', '/', $name).'Request.php';
     }
-
 
     /**
      * Get the stub file for the generator.
