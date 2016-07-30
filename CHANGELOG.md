@@ -20,6 +20,12 @@ All Notable changes to `Backpack Generators` will be documented in this file
 - Nothing
 
 
+## 1.1.1 - 2016-07-30
+
+### Added
+- ajax table view command for CrudControllers
+
+
 ## 1.1.0 - 2016-05-22
 
 ### Added
