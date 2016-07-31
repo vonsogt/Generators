@@ -20,6 +20,13 @@ All Notable changes to `Backpack Generators` will be documented in this file
 - Nothing
 
 
+
+## 1.1.3 - 2016-07-31
+
+### Fixed
+- Working bogus unit tests.
+
+
 ## 1.1.2 - 2016-07-30
 
 ### Added
