@@ -1,4 +1,6 @@
-<?php namespace DummyNamespace;
+<?php
+
+namespace DummyNamespace;
 
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 
@@ -56,10 +58,10 @@ class DummyClassCrudController extends CrudController {
         // NOTE: you also need to do overwrite the showDetailsRow($id) method in your EntityCrudController to show whatever you'd like in the details row OR overwrite the views/backpack/crud/details_row.blade.php
 
         // ------ AJAX TABLE VIEW
-        // Please note the drawbacks of this though: 
+        // Please note the drawbacks of this though:
         // - 1-n and n-n columns are not searchable
         // - date and datetime columns won't be sortable anymore
-        // $this->crud->enableAjaxTable(); 
+        // $this->crud->enableAjaxTable();
 
         // ------ ADVANCED QUERIES
         // $this->crud->addClause('active');
