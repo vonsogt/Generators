@@ -21,6 +21,13 @@ All Notable changes to `Backpack Generators` will be documented in this file
 
 
 
+## 1.1.4 - 2016-10-25
+
+### Fixed
+- Updated controller stub with new features;
+- Replaced constructor in controller with setup();
+
+
 ## 1.1.3 - 2016-07-31
 
 ### Fixed
