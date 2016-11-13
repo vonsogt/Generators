@@ -8,9 +8,11 @@ use Backpack\CRUD\app\Http\Controllers\CrudController;
 use App\Http\Requests\DummyClassRequest as StoreRequest;
 use App\Http\Requests\DummyClassRequest as UpdateRequest;
 
-class DummyClassCrudController extends CrudController {
+class DummyClassCrudController extends CrudController
+{
 
-	public function setUp() {
+    public function setUp()
+    {
 
         /*
 		|--------------------------------------------------------------------------
@@ -27,9 +29,9 @@ class DummyClassCrudController extends CrudController {
 		|--------------------------------------------------------------------------
 		*/
 
-		$this->crud->setFromDb();
+        $this->crud->setFromDb();
 
-		// ------ CRUD FIELDS
+        // ------ CRUD FIELDS
         // $this->crud->addField($options, 'update/create/both');
         // $this->crud->addFields($array_of_arrays, 'update/create/both');
         // $this->crud->removeField('name', 'update/create/both');
@@ -94,13 +96,13 @@ class DummyClassCrudController extends CrudController {
         // $this->crud->limit();
     }
 
-	public function store(StoreRequest $request)
-	{
-		return parent::storeCrud();
-	}
+    public function store(StoreRequest $request)
+    {
+        return parent::storeCrud();
+    }
 
-	public function update(UpdateRequest $request)
-	{
-		return parent::updateCrud();
-	}
+    public function update(UpdateRequest $request)
+    {
+        return parent::updateCrud();
+    }
 }
