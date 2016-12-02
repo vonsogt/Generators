@@ -89,6 +89,7 @@ class DummyClassCrudController extends CrudController {
         // $this->crud->addClause('whereHas', 'posts', function($query) {
         //     $query->activePosts();
         // });
+        // $this->crud->with(); // eager load relationships
         // $this->crud->orderBy();
         // $this->crud->groupBy();
         // $this->crud->limit();
@@ -96,11 +97,19 @@ class DummyClassCrudController extends CrudController {
 
 	public function store(StoreRequest $request)
 	{
-		return parent::storeCrud();
+		// your additional operations before save here
+        $redirect_location = parent::storeCrud();
+        // your additional operations after save here
+        // use $this->data['entry'] or $this->crud->entry
+        return $redirect_location;
 	}
 
 	public function update(UpdateRequest $request)
 	{
-		return parent::updateCrud();
+		// your additional operations before save here
+        $redirect_location = parent::updateCrud();
+        // your additional operations after save here
+        // use $this->data['entry'] or $this->crud->entry
+        return $redirect_location;
 	}
 }
