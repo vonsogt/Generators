@@ -27,7 +27,7 @@ class CrudModelBackpackCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $description = 'Generate a Backpack CRUD model';
+    protected $description = 'Generate a Backpack CRUD model and migration';
 
     /**
      * The type of class being generated.
@@ -99,5 +99,22 @@ class CrudModelBackpackCommand extends GeneratorCommand
         return [
 
         ];
+    }
+
+    protected function buildMigration($name)
+    {
+        \Artisan::call('make:migration', [
+            'name' => 'create_' . snake_case($name) . '_table',
+            '--create' => camel_case($name)
+        ]);
+    }
+
+    public function handle()
+    {
+        $name = $this->argument('name');
+
+        if (!$this->option('nomigration')) {
+            $this->buildMigration($name);
+        }
     }
 }
