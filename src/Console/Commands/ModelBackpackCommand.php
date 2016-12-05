@@ -109,8 +109,8 @@ class ModelBackpackCommand extends GeneratorCommand
     protected function buildMigration($name)
     {
         \Artisan::call('make:migration', [
-            'name' => 'create_' . snake_case($name) . '_table',
-            '--create' => camel_case($name)
+            'name' => 'create_'.snake_case($name).'_table',
+            '--create' => camel_case($name),
         ]);
 
         if ($this->option('softdelete')) {
@@ -125,7 +125,7 @@ class ModelBackpackCommand extends GeneratorCommand
     {
         $name = $this->argument('name');
 
-        if (!$this->option('nomigration')) {
+        if (! $this->option('nomigration')) {
             $this->buildMigration($name);
         }
     }
