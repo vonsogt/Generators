@@ -18,7 +18,9 @@ class CrudModelBackpackCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'backpack:crud-model {name}';
+    protected $signature = 'backpack:crud-model
+                            {name : Name of the model}
+                            {--nomigration : Disables creating of the migration file}';
 
     /**
      * The console command description.
