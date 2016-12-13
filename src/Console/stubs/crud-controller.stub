@@ -8,9 +8,11 @@ use Backpack\CRUD\app\Http\Controllers\CrudController;
 use App\Http\Requests\DummyClassRequest as StoreRequest;
 use App\Http\Requests\DummyClassRequest as UpdateRequest;
 
-class DummyClassCrudController extends CrudController {
+class DummyClassCrudController extends CrudController
+{
 
-	public function setUp() {
+    public function setUp()
+    {
 
         /*
 		|--------------------------------------------------------------------------
@@ -27,9 +29,9 @@ class DummyClassCrudController extends CrudController {
 		|--------------------------------------------------------------------------
 		*/
 
-		$this->crud->setFromDb();
+        $this->crud->setFromDb();
 
-		// ------ CRUD FIELDS
+        // ------ CRUD FIELDS
         // $this->crud->addField($options, 'update/create/both');
         // $this->crud->addFields($array_of_arrays, 'update/create/both');
         // $this->crud->removeField('name', 'update/create/both');
@@ -42,7 +44,7 @@ class DummyClassCrudController extends CrudController {
         // $this->crud->removeColumns(['column_name_1', 'column_name_2']); // remove an array of columns from the stack
         // $this->crud->setColumnDetails('column_name', ['attribute' => 'value']); // adjusts the properties of the passed in column (by name)
         // $this->crud->setColumnsDetails(['column_1', 'column_2'], ['attribute' => 'value']);
-        
+
         // ------ CRUD BUTTONS
         // possible positions: 'beginning' and 'end'; defaults to 'beginning' for the 'line' stack, 'end' for the others;
         // $this->crud->addButton($stack, $name, $type, $content, $position); // add a button; possible types are: view, model_function
@@ -74,8 +76,7 @@ class DummyClassCrudController extends CrudController {
         // - 1-n and n-n columns are not searchable
         // - date and datetime columns won't be sortable anymore
         // $this->crud->enableAjaxTable();
-        
-        
+
         // ------ DATATABLE EXPORT BUTTONS
         // Show export to PDF, CSV, XLS and Print buttons on the table view.
         // Does not work well with AJAX datatables.
