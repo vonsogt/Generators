@@ -20,6 +20,12 @@ All Notable changes to `Backpack Generators` will be documented in this file
 - Nothing
 
 
+## 1.1.7 - 2016-12-21
+
+### Removed
+- laracasts/generators dependency; it's NOT a Backpack\Generators dependency, it's a Backpack\Base dependency;
+
+
 ## 1.1.6 - 2016-12-21
 
 ### Added
