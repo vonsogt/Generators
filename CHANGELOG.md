@@ -20,6 +20,11 @@ All Notable changes to `Backpack Generators` will be documented in this file
 - Nothing
 
 
+## 1.1.5 - 2016-12-21
+
+### Added
+- laracasts/generators dependency;
+
 
 ## 1.1.4 - 2016-10-25
 
