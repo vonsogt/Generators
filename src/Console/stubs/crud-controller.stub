@@ -15,19 +15,19 @@ class DummyClassCrudController extends CrudController
     {
 
         /*
-		|--------------------------------------------------------------------------
-		| BASIC CRUD INFORMATION
-		|--------------------------------------------------------------------------
-		*/
+        |--------------------------------------------------------------------------
+        | BASIC CRUD INFORMATION
+        |--------------------------------------------------------------------------
+        */
         $this->crud->setModel("App\Models\DummyClass");
         $this->crud->setRoute("admin/dummy_class");
         $this->crud->setEntityNameStrings('dummy_class', 'DummyTable');
 
         /*
-		|--------------------------------------------------------------------------
-		| BASIC CRUD INFORMATION
-		|--------------------------------------------------------------------------
-		*/
+        |--------------------------------------------------------------------------
+        | BASIC CRUD INFORMATION
+        |--------------------------------------------------------------------------
+        */
 
         $this->crud->setFromDb();
 
@@ -96,21 +96,21 @@ class DummyClassCrudController extends CrudController
         // $this->crud->limit();
     }
 
-	public function store(StoreRequest $request)
-	{
-		// your additional operations before save here
+    public function store(StoreRequest $request)
+    {
+        // your additional operations before save here
         $redirect_location = parent::storeCrud();
         // your additional operations after save here
         // use $this->data['entry'] or $this->crud->entry
         return $redirect_location;
-	}
+    }
 
-	public function update(UpdateRequest $request)
-	{
-		// your additional operations before save here
+    public function update(UpdateRequest $request)
+    {
+        // your additional operations before save here
         $redirect_location = parent::updateCrud();
         // your additional operations after save here
         // use $this->data['entry'] or $this->crud->entry
         return $redirect_location;
-	}
+    }
 }
