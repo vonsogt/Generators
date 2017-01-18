@@ -25,7 +25,7 @@ class CrudRequestBackpackCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $description = 'Generate a Backpack\CRUD request';
+    protected $description = 'Generate a Backpack CRUD request';
 
     /**
      * The type of class being generated.
