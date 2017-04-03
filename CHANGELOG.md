@@ -24,6 +24,8 @@ All Notable changes to `Backpack Generators` will be documented in this file
 
 ### Fixed
 - using single quotes instead of double quotes for class names;
+- using the configured admin prefix;
+- better entity name pluralization;
 
 
 ## 1.1.7 - 2016-12-21
