@@ -19,7 +19,7 @@ class DummyClassCrudController extends CrudController
         | BASIC CRUD INFORMATION
         |--------------------------------------------------------------------------
         */
-        $this->crud->setModel("App\Models\DummyClass");
+        $this->crud->setModel('App\Models\DummyClass');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/dummy_class');
         $this->crud->setEntityNameStrings('dummy_class', 'DummyTable');
 
@@ -90,6 +90,8 @@ class DummyClassCrudController extends CrudController
         // $this->crud->addClause('whereHas', 'posts', function($query) {
         //     $query->activePosts();
         // });
+        // $this->crud->addClause('withoutGlobalScopes');
+        // $this->crud->addClause('withoutGlobalScope', VisibleScope::class);
         // $this->crud->with(); // eager load relationships
         // $this->crud->orderBy();
         // $this->crud->groupBy();

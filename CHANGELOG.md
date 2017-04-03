@@ -20,6 +20,12 @@ All Notable changes to `Backpack Generators` will be documented in this file
 - Nothing
 
 
+## 1.1.8 - 2017-04-03
+
+### Fixed
+- using single quotes instead of double quotes for class names;
+
+
 ## 1.1.7 - 2016-12-21
 
 ### Removed
