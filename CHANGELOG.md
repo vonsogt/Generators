@@ -20,6 +20,15 @@ All Notable changes to `Backpack Generators` will be documented in this file
 - Nothing
 
 
+## 1.1.9 - 2017-04-26
+
+### Added
+- more removeButton methods to CrudController stub;
+
+### Fixed
+- CrudController setup method name (no uppercase letters);
+
+
 ## 1.1.8 - 2017-04-03
 
 ### Fixed
