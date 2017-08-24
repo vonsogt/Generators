@@ -41,25 +41,25 @@ Open the console and enter one of the commands to generate:
 - Models (available options: --softdelete)
 
 ``` bash
-$ php artisan backpack:model
+$ php artisan backpack:model {Entity_name}
 ```
 
 - Requests
 
 ``` bash
-$ php artisan backpack:request
+$ php artisan backpack:request {Entity_name}
 ```
 
 - Views (available options: --plain)
 
 ``` bash
-$ php artisan backpack:view
-```
+$ php artisan backpack:view {Entity_name}
+``` 
 
 - Config files
 
 ``` bash
-$ php artisan backpack:config
+$ php artisan backpack:config {Entity_name}
 ```
 
 - All files for a new Backpack\CRUD interface:
