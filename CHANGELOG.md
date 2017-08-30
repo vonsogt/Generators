@@ -20,6 +20,13 @@ All Notable changes to `Backpack Generators` will be documented in this file
 - Nothing
 
 
+## 1.1.11 - 2017-08-30
+
+### Added
+- Laravel 5.5 support (handle() alias for fire());
+- Package auto-discovery;
+
+
 ## 1.1.10 - 2017-08-11
 
 ### Fixed
