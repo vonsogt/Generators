@@ -21,8 +21,9 @@ Via Composer
 $ composer require backpack/generators --dev
 ```
 
-You'll only want to use these generators for ```local``` development, so you don't want to update the ```production``` providers array in ```config/app.php```. Instead, add the provider in ```app/Providers/AppServiceProvider.php```, like so:
-Add this to your config/app.php, under "providers":
+For Laravel 5.5 - you're done.
+
+For Laravel 5.4 or 5.3 you'll only want to use these generators for ```local``` development, so you don't want to update the ```production``` providers array in ```config/app.php```. Instead, add the provider in ```app/Providers/AppServiceProvider.php```, like so:
 
 ```php
 public function register()
