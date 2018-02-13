@@ -2,20 +2,27 @@
 
 namespace Backpack\Generators;
 
+use Backpack\Generators\Console\Commands\ConfigBackpackCommand;
+use Backpack\Generators\Console\Commands\CrudModelBackpackCommand;
+use Backpack\Generators\Console\Commands\CrudControllerBackpackCommand;
+use Backpack\Generators\Console\Commands\CrudRequestBackpackCommand;
+use Backpack\Generators\Console\Commands\CrudBackpackCommand;
+use Backpack\Generators\Console\Commands\ModelBackpackCommand;
+use Backpack\Generators\Console\Commands\RequestBackpackCommand;
+use Backpack\Generators\Console\Commands\ViewBackpackCommand;
 use Illuminate\Support\ServiceProvider;
 
 class GeneratorsServiceProvider extends ServiceProvider
 {
     protected $commands = [
-        'Backpack\Generators\Console\Commands\ModelBackpackCommand',
-        'Backpack\Generators\Console\Commands\RequestBackpackCommand',
-        'Backpack\Generators\Console\Commands\ViewBackpackCommand',
-        'Backpack\Generators\Console\Commands\ConfigBackpackCommand',
-        // Backpack\CRUD files:
-        'Backpack\Generators\Console\Commands\CrudModelBackpackCommand',
-        'Backpack\Generators\Console\Commands\CrudControllerBackpackCommand',
-        'Backpack\Generators\Console\Commands\CrudRequestBackpackCommand',
-        'Backpack\Generators\Console\Commands\CrudBackpackCommand',
+        ConfigBackpackCommand::class,
+        CrudModelBackpackCommand::class,
+        CrudControllerBackpackCommand::class,
+        CrudRequestBackpackCommand::class,
+        CrudBackpackCommand::class,
+        ModelBackpackCommand::class,
+        RequestBackpackCommand::class,
+        ViewBackpackCommand::class,
     ];
 
     /**
