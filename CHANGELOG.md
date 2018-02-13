@@ -24,6 +24,7 @@ All Notable changes to `Backpack Generators` will be documented in this file
 
 ### Fixed
 - cleaner service provider;
+- annotation to allow IDEs to autocomplete the code when referencing ```$crud```;
 
 ## 1.1.13 - 2018-02-14
 
