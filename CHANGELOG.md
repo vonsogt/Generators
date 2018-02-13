@@ -20,6 +20,10 @@ All Notable changes to `Backpack Generators` will be documented in this file
 - Nothing
 
 
+## 1.1.14 - 2018-02-xx
+
+### Fixed
+- cleaner service provider;
 
 ## 1.1.13 - 2018-02-14
 
