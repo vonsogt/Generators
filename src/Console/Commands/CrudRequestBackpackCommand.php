@@ -18,7 +18,7 @@ class CrudRequestBackpackCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'backpack:make:request {name}';
+    protected $signature = 'backpack:make:crud-request {name}';
 
     /**
      * The console command description.
