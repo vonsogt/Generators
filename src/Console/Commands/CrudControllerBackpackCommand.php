@@ -18,7 +18,7 @@ class CrudControllerBackpackCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'backpack:make:crud-controller {name}';
+    protected $signature = 'backpack:make:controller {name}';
 
     /**
      * The console command description.
