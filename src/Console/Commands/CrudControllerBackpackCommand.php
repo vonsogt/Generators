@@ -11,14 +11,14 @@ class CrudControllerBackpackCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'backpack:crud-controller';
+    protected $name = 'backpack:make:controller';
 
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'backpack:crud-controller {name}';
+    protected $signature = 'backpack:make:crud-controller {name}';
 
     /**
      * The console command description.
