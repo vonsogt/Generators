@@ -20,11 +20,16 @@ All Notable changes to `Backpack Generators` will be documented in this file
 - Nothing
 
 
-## 1.1.14 - 2018-02-xx
+## 1.2.0 - 2018-06-22
 
 ### Fixed
 - cleaner service provider;
 - annotation to allow IDEs to autocomplete the code when referencing ```$crud```;
+- #39 - use backpack_auth() function from 0.9.x updates;
+
+### Removed
+- support for Backpack\Base below 0.9;
+
 
 ## 1.1.13 - 2018-02-14
 
