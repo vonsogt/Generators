@@ -19,6 +19,10 @@ All Notable changes to `Backpack Generators` will be documented in this file
 ### Security
 - Nothing
 
+## 1.2.1 - 2018-06-22
+
+### Fixed
+- Travis CI;
 
 ## 1.2.0 - 2018-06-22
 
