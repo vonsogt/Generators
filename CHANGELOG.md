@@ -19,6 +19,12 @@ All Notable changes to `Backpack Generators` will be documented in this file
 ### Security
 - Nothing
 
+## 1.2.2 - 2018-06-22
+
+### Fixed
+- composer requirements;
+
+
 ## 1.2.1 - 2018-06-22
 
 ### Fixed
