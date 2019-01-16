@@ -19,6 +19,12 @@ All Notable changes to `Backpack Generators` will be documented in this file
 ### Security
 - Nothing
 
+
+## 1.2.6 - 2019-01-16
+
+## Added
+- CrudPanel reference to CrudController stb, for IDE code completion;
+
 ## 1.2.5 - 2018-11-22
 
 ## Added
