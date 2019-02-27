@@ -19,6 +19,10 @@ All Notable changes to `Backpack Generators` will be documented in this file
 ### Security
 - Nothing
 
+## 1.2.7 - 2019-02-27
+
+## Added
+- Backpack\Base 1.1 compatibility;
 
 ## 1.2.6 - 2019-01-16
 
