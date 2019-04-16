@@ -18,7 +18,7 @@ Quickly generate Backpack templated Models, Requests, Views and Config files.
 Via Composer
 
 ``` bash
-$ composer require backpack/generators --dev
+composer require backpack/generators --dev
 ```
 
 For Laravel 5.5 - you're done.
