@@ -42,18 +42,15 @@ class CrudBackpackCommand extends Command
         Artisan::call('backpack:crud-request', ['name' => $name]);
         echo Artisan::output();
 
-        $name = str_replace($this->laravel->getNamespace(), '', $name);
-        $controller = $this->laravel['path'].'/'.str_replace('\\', '/', $name).'CrudController';
-
         // Create the CRUD route
-        Artisan::call('php artisan backpack:add-custom-route', [
-            'code' => "Route::crud('".$name."', '".$controller."');",
+        Artisan::call('backpack:add-custom-route', [
+            'code' => "Route::crud('".$this->argument('name')."', '".$name."CrudController');",
         ]);
         echo Artisan::output();
 
         // Create the sidebar item
-        Artisan::call('php artisan backpack:add-sidebar-content', [
-            'code' => "<li class='nav-item'><a class='nav-link' href='{{ backpack_url('".$name."') }}'><i class='nav-icon fa fa-question'></i> ".ucfirst(\Str::plural($name)).'</a></li>',
+        Artisan::call('backpack:add-sidebar-content', [
+            'code' => "<li class='nav-item'><a class='nav-link' href='{{ backpack_url('".$this->argument('name')."') }}'><i class='nav-icon fa fa-question'></i> ".\Str::plural($name).'</a></li>',
         ]);
         echo Artisan::output();
     }
