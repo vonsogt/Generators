@@ -4,6 +4,12 @@ All Notable changes to `Backpack Generators` will be documented in this file
 
 ------------
 
+## 2.0.1 - 2019-09-12
+
+### Fixed
+- it's better for ```setupXxxOperation()``` methods to be ```protected```;
+
+
 ## 2.0.0 - 2019-09-12
 
 ### Added

@@ -26,13 +26,13 @@ class DummyClassCrudController extends CrudController
         $this->crud->setEntityNameStrings('dummy_class', 'DummyTable');
     }
 
-    public function setupListOperation()
+    protected function setupListOperation()
     {
         // TODO: remove setFromDb() and manually define Columns, maybe Filters
         $this->crud->setFromDb();
     }
 
-    public function setupCreateOperation()
+    protected function setupCreateOperation()
     {
         $this->crud->setValidation(DummyClassRequest::class);
 
@@ -40,7 +40,7 @@ class DummyClassCrudController extends CrudController
         $this->crud->setFromDb();
     }
 
-    public function setupUpdateOperation()
+    protected function setupUpdateOperation()
     {
         $this->setupCreateOperation();
     }
