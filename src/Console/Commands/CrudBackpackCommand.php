@@ -47,13 +47,13 @@ class CrudBackpackCommand extends Command
 
         // Create the CRUD route
         Artisan::call('php artisan backpack:add-custom-route', [
-            'code' => "Route::crud('".$name."', '".$controller."');"
+            'code' => "Route::crud('".$name."', '".$controller."');",
         ]);
         echo Artisan::output();
 
         // Create the sidebar item
         Artisan::call('php artisan backpack:add-sidebar-content', [
-            'code' => "<li class='nav-item'><a class='nav-link' href='{{ backpack_url('".$name."') }}'><i class='nav-icon fa fa-question'></i> ".ucfirst(\Str::plural($name))."</a></li>"
+            'code' => "<li class='nav-item'><a class='nav-link' href='{{ backpack_url('".$name."') }}'><i class='nav-icon fa fa-question'></i> ".ucfirst(\Str::plural($name)).'</a></li>',
         ]);
         echo Artisan::output();
     }
