@@ -10,8 +10,8 @@ use Backpack\Generators\Console\Commands\ConfigBackpackCommand;
 use Backpack\Generators\Console\Commands\RequestBackpackCommand;
 use Backpack\Generators\Console\Commands\CrudModelBackpackCommand;
 use Backpack\Generators\Console\Commands\CrudRequestBackpackCommand;
-use Backpack\Generators\Console\Commands\CrudControllerBackpackCommand;
 use Backpack\Generators\Console\Commands\CrudOperationBackpackCommand;
+use Backpack\Generators\Console\Commands\CrudControllerBackpackCommand;
 
 class GeneratorsServiceProvider extends ServiceProvider
 {
