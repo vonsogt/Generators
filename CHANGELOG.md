@@ -4,6 +4,12 @@ All Notable changes to `Backpack Generators` will be documented in this file
 
 ------------
 
+## 2.0.2 - 2019-09-17
+
+### Added
+- command to generate a CRUD operation; ex: ```php artisan backpack:crud-operation Moderate```
+
+
 ## 2.0.1 - 2019-09-12
 
 ### Fixed

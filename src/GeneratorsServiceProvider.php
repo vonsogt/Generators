@@ -11,6 +11,7 @@ use Backpack\Generators\Console\Commands\RequestBackpackCommand;
 use Backpack\Generators\Console\Commands\CrudModelBackpackCommand;
 use Backpack\Generators\Console\Commands\CrudRequestBackpackCommand;
 use Backpack\Generators\Console\Commands\CrudControllerBackpackCommand;
+use Backpack\Generators\Console\Commands\CrudOperationBackpackCommand;
 
 class GeneratorsServiceProvider extends ServiceProvider
 {
@@ -18,6 +19,7 @@ class GeneratorsServiceProvider extends ServiceProvider
         ConfigBackpackCommand::class,
         CrudModelBackpackCommand::class,
         CrudControllerBackpackCommand::class,
+        CrudOperationBackpackCommand::class,
         CrudRequestBackpackCommand::class,
         CrudBackpackCommand::class,
         ModelBackpackCommand::class,
