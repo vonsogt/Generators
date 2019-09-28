@@ -46,7 +46,6 @@ trait DummyClassOperation
      */
     public function dummy_class()
     {
-        $this->crud->applyConfigurationFromSettings('dummy_class');
         $this->crud->hasAccessOrFail('dummy_class');
 
         // prepare the fields you need to show

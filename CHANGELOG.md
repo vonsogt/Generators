@@ -4,6 +4,12 @@ All Notable changes to `Backpack Generators` will be documented in this file
 
 ------------
 
+## 2.0.4 - 2019-09-28
+
+### Fixed
+- removed applyConfigurationFromSettings() call from operation stub, since it's now being called automatically by CrudController, before it reaches that method;
+
+
 ## 2.0.3 - 2019-09-28
 
 ### Fixed
