@@ -3,8 +3,8 @@
 namespace Backpack\Generators\Console\Commands;
 
 use Artisan;
-use Illuminate\Console\Command;
 use Illuminate\Support\Str;
+use Illuminate\Console\Command;
 
 class CrudBackpackCommand extends Command
 {
