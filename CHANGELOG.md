@@ -4,6 +4,13 @@ All Notable changes to `Backpack Generators` will be documented in this file
 
 ------------
 
+## 2.0.3 - 2019-09-28
+
+### Fixed
+- fixed crud command had Class 'Str' not found error in CrudBackpackCommand:53;
+- models are now generated with ```$guarded``` instead of ```$fillable``` by default, since the CRUDs now only save what fields have been added by CRUD, not everything that's inside the Request; this should speed up CRUD generation A LOT, by not having to edit the model before you edit the CRUD; it's an opinionated way to do things though - some people prefer $fillable, others $guarded; both work; it's just the default that has changed;
+
+
 ## 2.0.2 - 2019-09-17
 
 ### Added
