@@ -4,6 +4,12 @@ All Notable changes to `Backpack Generators` will be documented in this file
 
 ------------
 
+## 2.0.5 - 2019-11-11
+
+### Fixed
+- when generating CRUDs, route name should only have lowercase letters;
+
+
 ## 2.0.4 - 2019-09-28
 
 ### Fixed
