@@ -30,6 +30,7 @@ class CrudBackpackCommand extends Command
     public function handle()
     {
         $name = ucfirst($this->argument('name'));
+        $lowerName = strtolower($this->argument('name'));
 
         // Create the CRUD Controller and show output
         Artisan::call('backpack:crud-controller', ['name' => $name]);
@@ -45,13 +46,13 @@ class CrudBackpackCommand extends Command
 
         // Create the CRUD route
         Artisan::call('backpack:add-custom-route', [
-            'code' => "Route::crud('".$this->argument('name')."', '".$name."CrudController');",
+            'code' => "Route::crud('".$lowerName."', '".$name."CrudController');",
         ]);
         echo Artisan::output();
 
         // Create the sidebar item
         Artisan::call('backpack:add-sidebar-content', [
-            'code' => "<li class='nav-item'><a class='nav-link' href='{{ backpack_url('".$this->argument('name')."') }}'><i class='nav-icon fa fa-question'></i> ".Str::plural($name).'</a></li>',
+            'code' => "<li class='nav-item'><a class='nav-link' href='{{ backpack_url('".$lowerName."') }}'><i class='nav-icon fa fa-question'></i> ".Str::plural($name).'</a></li>',
         ]);
         echo Artisan::output();
     }
