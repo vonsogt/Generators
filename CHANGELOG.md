@@ -4,6 +4,12 @@ All Notable changes to `Backpack Generators` will be documented in this file
 
 ------------
 
+## 2.0.6 - 2020-01-06
+
+### Fixed
+- CrudController typehint;
+
+
 ## 2.0.5 - 2019-11-11
 
 ### Fixed
