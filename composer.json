@@ -19,10 +19,10 @@
         }
     ],
     "require": {
-        "backpack/crud": "4.0.*|v4.x-dev"
+        "backpack/crud": "4.0.*"
     },
     "require-dev": {
-        "phpunit/phpunit" : "4.*",
+        "phpunit/phpunit" : "^9.0||^7.0",
         "scrutinizer/ocular": "~1.1"
     },
     "autoload": {
