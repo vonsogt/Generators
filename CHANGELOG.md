@@ -4,6 +4,12 @@ All Notable changes to `Backpack Generators` will be documented in this file
 
 ------------
 
+## 2.0.7 - 2020-03-05
+
+### Fixed
+- Upgraded PHPUnit;
+
+
 ## 2.0.6 - 2020-01-06
 
 ### Fixed
