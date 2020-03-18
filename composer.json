@@ -1,5 +1,5 @@
 {
-    "name": "backpack/generators",
+    "name": "vonsogt/generators",
     "description": "Generate files for laravel projects",
     "keywords": [
         "generators",
